@@ -1,0 +1,24 @@
+{
+    "name": "unit-threaded-abscissa",
+    "description": "This is just a temporary fork of unit-threaded with pulls #41 and #42 included.",
+    "authors": ["Atila Neves"],
+    "homepage": "https://github.com/Abscissa/unit-threaded-abscissa",
+    "copyright": "Copyright © 2013, Atila Neves",
+    "license": "BSD 3-clause",
+    "targetType": "library",
+    "configurations": [
+        { "name": "library" },
+        {
+            "name": "unittest",
+            "targetType": "executable",
+            "sourcePaths": ["tests/pass"],
+            "sourceFiles": ["example/example_pass.d"],
+            "mainSourceFile": "example/example_pass.d"
+        },
+        {
+            "name": "gen_ut_main",
+            "targetType": "executable",
+            "mainSourceFile": "gen/gen_ut_main.d"
+        }
+    ]
+}
